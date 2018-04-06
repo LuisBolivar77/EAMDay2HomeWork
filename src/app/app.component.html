@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<table border="1">
+  <thead>
+    <tr>
+      <th>UserId</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let registro of listaPosts">
+      <td>{{ registro.userId }}</td>
+      <td>{{ registro.id }}</td>
+      <td>{{ registro.title }}</td>
+      <td>{{ registro.body }}</td>
+      <td><button (click)="deletePost(registro)" >Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+<h1>{{message}}</h1>
+
+
